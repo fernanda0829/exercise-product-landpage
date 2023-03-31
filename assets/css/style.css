@@ -22,7 +22,7 @@ h1 {
 }
 
 #header .header-brand img {
-  max-width: 72px;
+  max-width: 100px;
 }
 
 #header #menu .menu-list {
@@ -174,7 +174,11 @@ h1 {
   width: 490px;
   height: 490px;
   border-radius: 285px;
-  background-color: #edba9a;
+  background-image: url(../jpg/amy-shamblen-78r9kgp1-Tk-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  transform: scaleX(-1);
   margin-right: 25px;
 }
 
@@ -188,7 +192,9 @@ h1 {
   width: 112px;
   height: 112px;
   border-radius: 56px;
-  background-color: #b8aa62;
+  background-image: url(../jpg/keila-hotzel--lmvKQQ6QqA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
   margin: 35px 0 25px;
 }
 
@@ -196,7 +202,9 @@ h1 {
   width: 112px;
   height: 112px;
   border-radius: 56px;
-  background-color: #d887a7;
+  background-image: url(../jpg/ian-dooley-TLD6iCOlyb0-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
   margin: 25px 0;
 }
 
@@ -204,6 +212,8 @@ h1 {
   width: 112px;
   height: 112px;
   border-radius: 56px;
-  background-color: #c19760;
+  background-image: url(../jpg/brooke-lark-pGM4sjt_BdQ-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
   margin: 25px 0 35px;
 }
