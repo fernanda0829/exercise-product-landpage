@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&family=Poppins:wght@300;500&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/0b6a0e4634.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -25,7 +29,9 @@
             <li class="menu-list-item">
               <a href="">Home</a>
             </li>
-            <li class="menu-list-item"><a>Products</a></li>
+            <li class="menu-list-item">
+              <a>Products</a>
+            </li>
             <li class="menu-list-item"><a>About</a></li>
             <li class="menu-list-item"><a>Contact</a></li>
           </ul>
@@ -33,7 +39,9 @@
         <div class="user-search">
           <form action="" class="search">
             <input placeholder="Type here" type="search" />
-            <button class="search-btn"></button>
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </form>
           <div class="user">
             <button>
@@ -45,14 +53,25 @@
     </header>
     <main id="content">
       <div class="container">
-        <div class="container-info">
+        <div class="content-info">
           <div class="content-head">
-            <h1 class="content-head-tittle">Sweet - commerce</h1>
-            <h2 class="content-head-desc">Support Local Everything</h2>
+            <h1 class="content-head-tittle">
+              Sweet <br />
+              e-commerce
+            </h1>
+            <h2 class="content-head-desc">Make your party even sweeter</h2>
           </div>
           <div class="desc-product">
-            <p>Choose your</p>
-            <div></div>
+            <h3 class="desc-product-tittle">Details</h3>
+            <p class="desc-product-desc">
+              <strong>Unicorn pack:</strong> Cotton candy, Cupcake, Ice cream.
+            </p>
+            <div class="options-product">
+              <label>25un</label>
+              <label>50un</label>
+              <label class="active">75un</label>
+              <label>100un</label>
+            </div>
           </div>
           <div class="btn">
             <div class="icon-bag">
@@ -61,20 +80,22 @@
             <button>Buy now</button>
           </div>
         </div>
-        <div class="container-photo">
-          <div class="circle-big"></div>
-          <div class="circle-group">
-            <div class="circle-1"></div>
-            <div class="circle-2"></div>
-            <div class="circle-3"></div>
+        <div class="content-photo">
+          <div class="circles">
+            <div class="circle-big"></div>
+            <div class="circle-group">
+              <div class="circle-1"></div>
+              <div class="circle-2"></div>
+              <div class="circle-3"></div>
+            </div>
+          </div>
+          <div class="action-call">
+            <button>
+              Continue shopping
+              <img src="assets/png/icon-arrow.png" alt="" />
+            </button>
           </div>
         </div>
-      </div>
-      <div>
-        <button>
-          Continue shopping
-          <img src="assets/png/icon-arrow.png" alt="" />
-        </button>
       </div>
     </main>
   </body>
