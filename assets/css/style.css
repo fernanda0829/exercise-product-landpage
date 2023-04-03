@@ -31,7 +31,6 @@ h1 {
 #header #menu .menu-list {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 #header #menu .menu-list .menu-list-item {
@@ -43,13 +42,13 @@ h1 {
   font-size: 21px;
   font-weight: 500;
   line-height: 24px;
-  padding: 5px;
+  padding: 4px;
 }
 
 #header #menu .menu-list .menu-list-item a:hover {
-  background-color: #ffd476;
+  /* background-color: #ffd476; */
+  border: 1px dashed rgb(255, 212, 118, 0.6);
   transition: 0.8s;
-  color: #fdfdfd;
 }
 
 #header .user-search {
@@ -100,7 +99,7 @@ h1 {
 }
 
 #content {
-  padding: 20px 0 60px 0;
+  padding: 20px 0 60px;
 }
 
 #content .content-head .content-head-tittle {
@@ -119,6 +118,8 @@ h1 {
   color: #c3ac5b;
   line-height: 1;
   margin-bottom: 40px;
+  position: absolute;
+  z-index: 1;
 }
 
 #content .content-info .desc-product {
@@ -129,37 +130,119 @@ h1 {
   padding: 15px;
   border-radius: 20px;
   border: 1px dashed rgb(255, 212, 118, 0.6);
+  position: relative;
+  top: 70px;
 }
 
-#content .container-photo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+#content .content-info .desc-product .desc-product-tittle {
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
 }
 
-#content .container-photo .circles {
+#content .content-info .desc-product .desc-product-desc {
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+#content .content-info .desc-product .options-product {
+  margin-bottom: 10px;
+}
+
+#content .content-info .desc-product .options-product label {
+  border: 1px solid rgba(186, 131, 82, 0.6);
+  color: rgba(186, 131, 82, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#content .content-info .desc-product .options-product label:hover {
+  border-color: #ba8352;
+  color: #ba8352;
+  transition: 0.8s;
+}
+
+#content .content-info .desc-product .options-product .active {
+  border-color: #e0a0b8;
+  color: #e0a0b8;
+  box-shadow: 1px 1px 6px rgb(224, 160, 184, 0.5);
+}
+
+#content .content-info .btn {
+  position: relative;
+  top: 115px;
+}
+
+#content .content-info .btn i {
+  font-size: 30px;
+  color: #ba8352;
+  background-color: #fdfdfd;
+  padding: 10px;
+  border-radius: 60px;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+#content .content-info .btn button {
+  background-color: #ba8352;
+  color: #fdfdfd;
+  width: 315px;
+  height: 80px;
+  border-radius: 60px;
+  padding: 20px;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
   display: flex;
   align-items: center;
 }
 
-#content .container-photo .circle-big {
+#content .content-info .btn button:hover {
+  background-color: #e0a0b8;
+  transition: 0.8s;
+}
+
+#content .content-info .btn button:hover i {
+  color: #e0a0b8;
+  transition: 0.8s;
+}
+
+#content .content-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+#content .content-photo .circles {
+  display: flex;
+  align-items: center;
+}
+
+#content .content-photo .circle-big {
   width: 450px;
   height: 450px;
   border-radius: 225px;
-
   background-image: url(../jpg/amy-shamblen-78r9kgp1-Tk-unsplash.jpg);
   background-position: center;
   background-size: cover;
   transform: scaleX(-1);
   margin-right: 25px;
 }
-#content .container-photo .circle-group {
+
+#content .content-photo .circle-group {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#content .container-photo .circle-group .circle-1 {
+#content .content-photo .circle-group .circle-1 {
   width: 112px;
   height: 112px;
   border-radius: 56px;
@@ -169,7 +252,7 @@ h1 {
   margin: 35px 0 25px;
 }
 
-#content .container-photo .circle-group .circle-2 {
+#content .content-photo .circle-group .circle-2 {
   width: 112px;
   height: 112px;
   border-radius: 56px;
@@ -179,7 +262,7 @@ h1 {
   margin: 25px 0;
 }
 
-#content .container-photo .circle-group .circle-3 {
+#content .content-photo .circle-group .circle-3 {
   width: 112px;
   height: 112px;
   border-radius: 56px;
@@ -187,4 +270,41 @@ h1 {
   background-position: center;
   background-size: cover;
   margin: 25px 0 35px;
+}
+
+#content .content-photo .action-call {
+  margin-top: 55px;
+  display: flex;
+  justify-content: right;
+}
+
+#content .content-photo .action-call .action-desc {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #c3ac5b;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+#content .content-photo .action-call .line {
+  width: 120px;
+  height: 2px;
+  border: 1px solid #c3ac5b;
+  position: relative;
+}
+
+#content .content-photo .action-call .line::after {
+  content: "";
+  position: absolute;
+  border: 2px solid;
+  width: 10px;
+  height: 10px;
+  border-color: #c3ac5b #c3ac5b transparent transparent;
+  display: block;
+  transform: rotate(45deg);
+  bottom: -7px;
+  right: 0;
 }
