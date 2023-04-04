@@ -45,6 +45,11 @@ h1 {
   padding: 4px;
 }
 
+#header #menu .menu-list .menu-list-item a:hover {
+  color: #ffd476;
+  transition: 0.8s;
+}
+
 #header .user-search {
   display: flex;
   align-items: center;
@@ -70,14 +75,14 @@ h1 {
 #header .user-search .search-btn i {
   position: absolute;
   z-index: 1;
-  right: 200px;
+  right: 260px;
   top: 95px;
   font-size: 18px;
   color: #ba8352;
 }
 
 #header .user-search .search-btn i:hover {
-  color: #e0a0b8;
+  color: #ffd476;
   transition: 0.8s;
 }
 
@@ -90,6 +95,12 @@ h1 {
 
 #header .user-search .user button img {
   max-width: 22px;
+}
+
+#header #menu-mobile {
+  display: none;
+  font-size: 30px;
+  color: #ba8352;
 }
 
 #content {
@@ -347,7 +358,7 @@ h1 {
   }
 
   #header .user-search .search-btn i {
-    right: 110px;
+    right: 130px;
     top: 85px;
     font-size: 16px;
   }
@@ -480,7 +491,58 @@ h1 {
 /* minimo 768px */
 @media (max-width: 991px) {
   .container {
-    max-width: 740px;
+    max-width: 720px;
+  }
+
+  #header #menu {
+    display: none;
+  }
+
+  #header #menu-mobile {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ba8352;
+  }
+
+  #header #menu-mobile .menu-mobile-list {
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 140px;
+    cursor: pointer;
+  }
+
+  #header #menu-mobile .menu-mobile-list .menu-list-item {
+    width: 768px;
+    height: 45px;
+    background-color: #fff;
+    padding: 15px 0;
+  }
+
+  #header #menu-mobile .menu-mobile-list .menu-list-item:first-child {
+    border-top: 1px dashed #ffd476;
+  }
+  #header #menu-mobile .menu-mobile-list .menu-list-item:nth-child(2) {
+    border: 1px dashed #ffd476;
+  }
+  #header #menu-mobile .menu-mobile-list .menu-list-item:last-child,
+  #header #menu-mobile .menu-mobile-list .menu-list-item:nth-child(3) {
+    border-bottom: 1px dashed #ffd476;
+  }
+
+  #header #menu-mobile .menu-mobile-list .menu-list-item a {
+    color: #ba8352;
+    cursor: pointer;
+  }
+
+  #header .user-search .search-btn i {
+    right: 255px;
+    top: 85px;
+    font-size: 16px;
   }
 
   #content .content-head .content-head-tittle {
