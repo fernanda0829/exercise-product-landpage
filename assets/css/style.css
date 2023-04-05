@@ -56,6 +56,10 @@ h1 {
   justify-content: space-between;
 }
 
+#header .user-search .search {
+  position: relative;
+}
+
 #header .user-search .search input {
   background-color: #fdfdfd;
   width: 350px;
@@ -75,8 +79,8 @@ h1 {
 #header .user-search .search-btn i {
   position: absolute;
   z-index: 1;
-  right: 260px;
-  top: 95px;
+  right: 10%;
+  top: 24%;
   font-size: 18px;
   color: #ba8352;
 }
@@ -328,7 +332,7 @@ h1 {
   }
 
   #header {
-    height: 180px;
+    height: auto;
     padding: 45px 0;
   }
 
@@ -351,16 +355,14 @@ h1 {
     transition: 0.8s;
   }
 
+  #header .user-search .search-btn i {
+    font-size: 16px;
+  }
+
   #header .user-search .search input {
     width: 290px;
     height: 36px;
     padding: 9px 0 4px 27px;
-  }
-
-  #header .user-search .search-btn i {
-    right: 130px;
-    top: 85px;
-    font-size: 16px;
   }
 
   #header .user-search .user button {
@@ -488,10 +490,15 @@ h1 {
   }
 }
 
-/* minimo 768px */
+/* minimo 760px */
 @media (max-width: 991px) {
   .container {
     max-width: 720px;
+  }
+
+  #header {
+    height: auto;
+    padding: 36px 0;
   }
 
   #header #menu {
@@ -501,37 +508,27 @@ h1 {
   #header #menu-mobile {
     display: block;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 26px;
     color: #ba8352;
+    position: relative;
   }
 
   #header #menu-mobile .menu-mobile-list {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1;
     text-align: center;
     position: absolute;
     z-index: 1;
-    right: 0;
-    top: 140px;
+    right: 0%;
+    top: 199%;
     cursor: pointer;
   }
 
   #header #menu-mobile .menu-mobile-list .menu-list-item {
-    width: 768px;
-    height: 45px;
+    width: 117vh;
+    height: 8vh;
     background-color: #fff;
     padding: 15px 0;
-  }
-
-  #header #menu-mobile .menu-mobile-list .menu-list-item:first-child {
-    border-top: 1px dashed #ffd476;
-  }
-  #header #menu-mobile .menu-mobile-list .menu-list-item:nth-child(2) {
-    border: 1px dashed #ffd476;
-  }
-  #header #menu-mobile .menu-mobile-list .menu-list-item:last-child,
-  #header #menu-mobile .menu-mobile-list .menu-list-item:nth-child(3) {
-    border-bottom: 1px dashed #ffd476;
   }
 
   #header #menu-mobile .menu-mobile-list .menu-list-item a {
@@ -540,9 +537,8 @@ h1 {
   }
 
   #header .user-search .search-btn i {
-    right: 255px;
-    top: 85px;
-    font-size: 16px;
+    font-size: 13px;
+    top: 30%;
   }
 
   #content .content-head .content-head-tittle {
@@ -593,9 +589,21 @@ h1 {
     font-size: 18px;
   }
 
+  #content .content-info .desc-product {
+    width: 260px;
+    height: 115px;
+    padding: 10px;
+    position: absolute;
+    top: 725px;
+  }
+
   #content .content-photo {
     padding-top: 14px;
   }
+  #content .content-photo .circles {
+    padding-top: 55px;
+  }
+
   #content .content-photo .circle-big {
     width: 260px;
     height: 260px;
@@ -615,5 +623,145 @@ h1 {
     width: 90px;
     height: 90px;
     margin: 26px 0px 26px 18px;
+  }
+}
+
+/* minimo 375px */
+@media (max-width: 759px) {
+  .container {
+    max-width: 345px;
+    flex-direction: column;
+  }
+
+  #header {
+    height: auto;
+    padding: 36px 0;
+  }
+
+  #header #menu-mobile {
+    font-size: 21px;
+    position: relative;
+  }
+
+  #header .user-search .search input {
+    width: 200px;
+    height: 29px;
+    padding: 8px 0 3px 22px;
+  }
+
+  #header .user-search .search-btn i {
+    right: 15%;
+    font-size: 12px;
+  }
+
+  #header .user-search .user button {
+    width: 32px;
+    height: 32px;
+  }
+  #header .user-search .user button img {
+    max-width: 16px;
+  }
+
+  #header .user-search .search input::placeholder {
+    font-size: 12px;
+  }
+
+  #content .content-head .content-head-tittle {
+    font-size: 40px;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  #content .content-head .content-head-desc {
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: center;
+    position: static;
+  }
+
+  #content .content-info .desc-product {
+    width: 255px;
+    height: 115px;
+    padding: 10px;
+    position: absolute;
+    top: 740px;
+    left: 59px;
+  }
+
+  #content .content-info .desc-product .desc-product-tittle {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  #content .content-info .desc-product .desc-product-desc {
+    margin-bottom: 16px;
+    font-size: 12px;
+  }
+
+  #content .content-info .btn {
+    position: absolute;
+    top: 890px;
+    left: 87px;
+  }
+
+  #content .content-info .btn button {
+    width: 183px;
+    height: 46px;
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  #content .content-info .btn i {
+    font-size: 18px;
+    padding: 6px;
+    margin-right: 24px;
+  }
+
+  #content .content-photo .circles {
+    padding-top: 0;
+  }
+
+  #content .content-photo .circle-big {
+    width: 208px;
+    height: 208px;
+  }
+
+  #content .content-photo .circle-group .circle-1 {
+    width: 72px;
+    height: 72px;
+    margin: 21px 15px 21px 0;
+  }
+  #content .content-photo .circle-group .circle-2 {
+    width: 72px;
+    height: 72px;
+    margin: 21px 0;
+  }
+  #content .content-photo .circle-group .circle-3 {
+    width: 72px;
+    height: 72px;
+    margin: 21px 0px 21px 15px;
+  }
+
+  #content .content-photo .action-call {
+    position: absolute;
+    top: 936px;
+    left: 100px;
+    margin-top: 36px;
+  }
+
+  #content .content-photo .action-call .action-desc {
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    font-size: 11px;
+  }
+
+  #content .content-photo .action-call .line {
+    width: 79px;
+  }
+
+  #content .content-photo .action-call .line::after {
+    bottom: -6px;
   }
 }
